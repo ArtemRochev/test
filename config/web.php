@@ -6,6 +6,13 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+
+    'modules' => [
+        'utility' => [
+            'class' => 'c006\utility\migration\Module',
+        ],
+    ],
+
     'components' => [
         'request' => [
             'cookieValidationKey' => 'BBsrh5I0OHBKL6dE0PKj-H5WL2bjRsnp',
